@@ -1,7 +1,7 @@
 # charlotte-hotel
 Welcome to charlotte-hotels
 
-<a href='https://wolfgio.github.io/charlotte-hotel/'>live here</a>
+<a href='http://charlotte-hotel.herokuapp.com/'>live here</a>
 
 ## Getting started
 First Clone the repositry<br>
