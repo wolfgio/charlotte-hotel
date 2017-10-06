@@ -64,6 +64,7 @@ class HotelList extends React.Component {
     return (
       <div className="hotel-list-container animated fadeIn">
         <h3>Best choices between {this.props.dates.firstDate.moment} and {this.props.dates.lastDate.moment}</h3>
+        <section className="hotel-list-wrapper">
         <div className="hotel-list-filters">
           <h3>Filters</h3>
           <h5>Price Range</h5>
@@ -98,6 +99,7 @@ class HotelList extends React.Component {
             <HotelCard key={`${item.name}${Math.random()}`} item={item} />
           ))}
         </div>
+        </section>
       </div>
     )
   }

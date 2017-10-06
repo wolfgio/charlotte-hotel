@@ -1,9 +1,16 @@
 @import "../../../scss/variables";
 
+.hotel-list-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-around;
+  max-width: 75%;
+}
+
 .hotel-list-filters {
   width: 100%;
   max-width: 320px;
-  float: left;
   h3 {
     text-align: center;
   }
