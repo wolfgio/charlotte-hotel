@@ -7,7 +7,7 @@ Welcome to charlotte-hotels
 First Clone the repositry<br>
   `git clone https://github.com/wolfgio/charlotte-hotel.git`<br>
 
-Run the following command<br>
+then run the following command<br>
   `yarn install`
   
 ## How to run
