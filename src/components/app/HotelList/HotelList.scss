@@ -1,0 +1,99 @@
+@import "../../../scss/variables";
+
+.hotel-list-filters {
+  width: 100%;
+  max-width: 320px;
+  float: left;
+  h3 {
+    text-align: center;
+  }
+
+  h5 {
+    font-family: 'Heebo', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    color: #B5B5B5;
+    margin: 10px 0;
+  }
+
+  hr {
+    margin: 20px 0;
+    color: #B5B5B5;
+  }
+}
+
+.hotel-list-range {
+  .rc-slider-track {
+    height: 5px;
+    background-color: $primary-color;
+  }
+
+  .rc-slider-handle {
+    border-color: $primary-color;
+    width: 22px;
+    height: 22px;
+    margin-top: -9px;
+  }
+}
+
+.hotel-list-price {
+  margin: 20px 0;
+  display: flex;
+  justify-content: space-between;
+
+  .filters-min {
+    display: inline-block;
+    font-family: 'Heebo', sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    color: $primary-color;
+    &:before {
+      content: 'Min';
+      font-family: 'Heebo', sans-serif;
+      display: block;
+      font-size: 14px;
+      font-weight: 400;
+      color: #B5B5B5;
+      margin: 2px 0;
+      text-align: left;
+    }
+  }
+
+  .filters-max {
+    display: inline-block;
+    font-family: 'Heebo', sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    color: $primary-color;
+    &:before {
+      content: 'Max';
+      font-family: 'Heebo', sans-serif;
+      display: block;
+      font-size: 14px;
+      font-weight: 400;
+      color: #B5B5B5;
+      margin: 2px 0;
+      text-align: left;
+    }
+  }
+}
+
+.start-filter-input {
+  display: none;
+  & ~ label:after {
+    content: ' ';
+    display: inline-block;
+    width: 26px;
+    height: 26px;
+    background: url('http://www.raphaelfabeni.com.br/rv/test-resources/svg/star-outline.svg') no-repeat;
+    margin-right: 10px;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+  }
+
+  &:checked + label:after {
+    background: url('http://www.raphaelfabeni.com.br/rv/test-resources/svg/star-filled.svg') no-repeat;
+    animation-name: fadeIn;
+  }
+
+}

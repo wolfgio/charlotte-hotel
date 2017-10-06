@@ -1,0 +1,57 @@
+@import "../../../scss/variables";
+
+footer {
+  position: absolute;
+  left: 0;
+  right: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+
+  font-family: 'Heebo', sans-serif;
+  font-size: 12px;
+  color: $light-gray;
+
+  box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.13);
+
+  > section {
+    margin: 16px 0;
+  }
+}
+
+#facebook-link {
+  display: inline-block;
+  > span:after {
+    content: ' ';
+    display: block;
+    background: url('http://www.raphaelfabeni.com.br/rv/test-resources/svg/facebook.svg') no-repeat;
+    width: 34px;
+    height: 34px;
+  }
+}
+
+#twitter-link {
+  display: inline-block;
+  margin: 0 20px;
+  > span:after {
+    content: ' ';
+    display: block;
+    background: url('http://www.raphaelfabeni.com.br/rv/test-resources/svg/twitter.svg') no-repeat;
+    width: 34px;
+    height: 34px;
+  }
+}
+
+#instagram-link {
+  display: inline-block;
+  > span:after {
+    content: ' ';
+    display: block;
+    background: url('http://www.raphaelfabeni.com.br/rv/test-resources/svg/instagram.svg') no-repeat;
+    width: 34px;
+    height: 34px;
+  }
+}

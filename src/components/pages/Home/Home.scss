@@ -1,0 +1,108 @@
+@import "../../../scss/variables";
+
+.hero-bg {
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  max-height: 600px;
+  width: 100vw;
+}
+
+.page-container {
+ overflow: hidden; 
+}
+
+.home-container {
+  position: relative;
+  max-width: 838px;
+
+  margin: 73px auto 0 auto;
+  text-align: center;
+  color: $white;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.main-header-text {
+  font-size: 76px;
+  font-weight: 600;
+  letter-spacing: 15px;
+  margin: 20px;
+
+  &:before {
+    content: ' ';
+    margin: 0 auto 14px auto;
+    width: 600px;
+    display: block;
+    z-index: 1;
+    border-top: 2px solid $white;
+  }
+  &:after {
+    content: ' ';
+    margin: 14px auto 0 auto;
+    width: 600px;
+    display: block;
+    z-index: 1;
+    border-bottom: 2px solid $white;
+  }
+}
+
+.welcome-text {
+  position: relative;
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: 2px;
+
+  &:before {
+    content: ' ';
+    width: 54.73px;
+    height: 43.51px;
+    display: block;
+
+    margin: 0 auto 5px auto;
+    background: url('http://www.raphaelfabeni.com.br/rv/test-resources/svg/crown.svg') no-repeat;
+  }
+}
+
+.calendar-wrapper {
+  width: 100%;
+  max-width: 838px;
+  margin: 94px auto;
+  border-radius: 7px;
+  background-color: $white;
+  color: #000000;
+  padding: 60px 108px;
+  box-shadow: 0 -40px 46px 0 rgba(0, 0, 0, 0.33);
+  overflow: hidden;
+  h4 {
+    font-weight: 400;
+    font-size: 22px;
+    letter-spacing: 1.4px;
+  }
+
+  section {
+    display: grid;
+    text-align: left;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 16px;
+
+    margin-top: 70px;
+    font-family: 'Heebo', sans-serif;
+
+    .date-container {
+      h4 {
+        margin: 0;
+        font-weight: 400;
+      }
+
+      span {
+        font-size: 20px;
+        color: $light-gray;
+      }
+
+      div {
+        position: relative;
+        margin-bottom: 46px;
+      }
+    }
+  }
+}

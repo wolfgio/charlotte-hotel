@@ -1,0 +1,123 @@
+@import "../../../scss/variables";
+
+.calendar {
+  width: 100%;
+  max-width: 290px;
+}
+
+
+.calendar-grid {
+  list-style: none;
+  padding: 10px 0;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-column-gap: 12px;
+
+  li {
+    text-align: center;
+    color: $light-gray;
+  }
+}
+
+.calendar-month-year {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: $light-gray;
+  border-top: 1px solid $light-gray;
+  font-family: 'Heebo', sans-serif;
+  h5 {
+    font-size: 15px;
+    font-weight: 400;
+  }
+
+  button {
+    background: transparent;
+    border: none;
+    color: $light-gray;
+  }
+}
+.week {
+  border-bottom: 1px solid $light-gray;
+}
+
+.day {
+  margin: 20px auto;
+  grid-column-gap: 0;
+  grid-row-gap: 11px;
+
+  input[type="checkbox"] {
+    display: none;
+    & ~ label {
+      text-align: center;
+      color: $light-gray;
+      width: 100%;
+      padding: 9px 0;
+      border: solid 2px transparent;
+    }
+
+    &:checked + label {
+      color: $white;
+      background: $green;
+      border: solid 2px $green;
+    }
+  }
+}
+
+
+.start1 {
+  input:first-child {
+    & + label {
+      grid-column-start: 1;
+    }
+  }
+}
+
+.start2 {
+  input:first-child {
+    & + label {
+      grid-column-start: 2;
+    }
+  }
+}
+
+.start3 {
+  input:first-child {
+    & + label {
+      grid-column-start: 3;
+    }
+  }
+}
+
+.start4 {
+  input:first-child {
+    & + label {
+      grid-column-start: 4;
+    }
+  }
+}
+
+.start5 {
+  input:first-child {
+    & + label {
+      grid-column-start: 5;
+    }
+  }
+}
+
+.start6 {
+  input:first-child {
+    & + label {
+      grid-column-start: 6;
+    }
+  }
+}
+
+.start7 {
+  input:first-child {
+    & + label {
+      grid-column-start: 7;
+    }
+  }
+}

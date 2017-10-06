@@ -1,0 +1,21 @@
+@import "../../../scss/variables";
+
+.top-nav {
+  padding: 30px 80px;
+  > a {
+    color: $white;
+
+    font-family: 'Heebo', sans-serif;
+    font-size: 15px;
+
+    text-decoration: none;
+  }
+
+  a + a {
+    margin: 0 20px;
+  }
+
+  a:last-child {
+    margin: 0;
+  }
+}
